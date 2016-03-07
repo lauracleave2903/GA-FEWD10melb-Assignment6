@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,700|Source+Serif+Pro);
+
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
 
@@ -106,6 +108,125 @@ textarea {
 
 
 /*
+ * GENERAL
+ */
+
+body {
+    font-family: 'Source-Sans-Pro', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+#container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+
+/*
+ * CONTACT US
+ */
+
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+}
+
+p {
+    font-family: 'Source-Serif-Pro', serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    text-align: center;
+}
+
+
+/*
+ * GENERAL INFO
+ */
+
+fieldset {
+    margin-top: 40px;
+}
+
+.subHead {
+    font-family: 'Source-Sans-Pro', sans-serif;
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+
+fieldset > label {
+    width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+}
+
+input[type="text"],
+input[type="email"] {
+    background-color: #f2f2f2;
+    border-style: none;
+    border-bottom: 1px solid #000000;
+    padding: 10px 0 10px 0;
+    margin-bottom: 20px;
+}
+
+input[placeholder] {
+    font-family: 'Source-Serif-Pro', serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    display: inline-block;
+    margin: 12px 5px 12px 0;
+}
+
+.radio > label,
+.checkbox > label {
+    font-family: 'Source-Serif-Pro', serif;
+    font-weight: 400;
+}
+
+
+/*
+ * PROJECT INFO
+ */
+
+#offerings5,
+#budget5 {
+    margin-bottom: 40px;
+}
+
+textarea {
+    resize: none;
+    background-color: #ffffff;
+    border-style: none;
+    min-height: 100px;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+}
+
+
+/*
+ * SUBMIT
+ */
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+
+/*
  * Apply a natural box layout model to all elements, but allowing components to change
  */
 
@@ -118,11 +239,6 @@ html {
 *:after {
     box-sizing: inherit;
 }
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
 
 
 /*
