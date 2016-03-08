@@ -28,9 +28,11 @@
         <p>We usually respond within one business day.</p>
 
         <form action="#" method="post" enctype="multipart/form-data">
+
             <fieldset>
                 <legend class="subHead">General Info</legend>
                 <br>
+
                 <label for="firstname">Name*</label>
                 <input type="text" name="name" id="name" placeholder="John Smith">
                 <label for="email">Email*</label>
@@ -40,65 +42,67 @@
                 <label for="hear">How did you hear about us?</label>
                 <input type="text" name="hear" id="hear" placeholder="Event">
                 <br>
+
                 <label for="discuss">What would you like to discuss?</label>
+                <br>
                 <div class="radio">
                     <input type="radio" checked name="discuss" id="discuss1">
-                    <label for="discuss1">Hiring Philosophie</label>
-                    <br>
+                    <label for="discuss1"><span></span>Hiring Philosophie</label>
                     <input type="radio" name="discuss" id="discuss2">
-                    <label for="discuss2">Joining the Philosophie team</label>
-                    <br>
+                    <label for="discuss2"><span></span>Joining the Philosophie team</label>
                     <input type="radio" name="discuss" id="discuss3">
-                    <label for="discuss3">Other</label>
+                    <label for="discuss3"><span></span>Other</label>
                 </div>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="fieldset2">
                 <legend class="subHead">Project Info</legend>
                 <br>
+
                 <label for="offerings">Which of our offerings interest you?</label>
+                <br>
                 <div class="checkbox">
                     <input type="checkbox" name="offerings" id="offerings1">
-                    <label for="offerings1">Lean Branding</label>
-                    <br>
+                    <label for="offerings1"><span></span>Lean Branding</label>
                     <input type="checkbox" name="offerings" id="offerings2">
-                    <label for="offerings2">4 Week MVP</label>
-                    <br>
+                    <label for="offerings2"><span></span>4 Week MVP</label>
                     <input type="checkbox" name="offerings" id="offerings3">
-                    <label for="offerings3">Product Team</label>
-                    <br>
+                    <label for="offerings3"><span></span>Product Team</label>
                     <input type="checkbox" name="offerings" id="offerings4">
-                    <label for="offerings4">Design Sprint</label>
-                    <br>
+                    <label for="offerings4"><span></span>Design Sprint</label>
                     <input type="checkbox" name="offerings" id="offerings5">
-                    <label for="offerings5">Other</label>
+                    <label for="offerings5"><span></span>Other</label>
                 </div>
-                <label for="problem">What is the problem you are trying to solve?</label>
-                <textarea name="problem" id="problem"></textarea>
-                <br>
-                <label for="accomplish">What do you hope our engagement will accomplish?</label>
-                <textarea name="accomplish" id="accomplish"></textarea>
+
+                <div class="problem">
+                    <label for="problem">What is the problem you are trying to solve?</label>
+                    <textarea name="problem" id="problem"></textarea>
+                    <br>
+                    <label for="accomplish">What do you hope our engagement will accomplish?</label>
+                    <textarea name="accomplish" id="accomplish"></textarea>
+                </div>
 
                 <label for="budget">What is your budget range?</label>
+                <br>
                 <div class="radio">
                     <input type="radio" name="budget" id="budget1">
-                    <label for="budget1">Less than $40k</label>
-                    <br>
+                    <label for="budget1"><span></span>Less than $40k</label>
                     <input type="radio" name="budget" id="budget2">
-                    <label for="budget2">$40k – $100k</label>
-                    <br>
+                    <label for="budget2"><span></span>$40k – $100k</label>
                     <input type="radio" name="budget" id="budget3">
-                    <label for="budget3">$100k – $250k</label>
-                    <br>
+                    <label for="budget3"><span></span>$100k – $250k</label>
                     <input type="radio" name="budget" id="budget4">
-                    <label for="budget4">$250k – $500k</label>
-                    <br>
+                    <label for="budget4"><span></span>$250k – $500k</label>
                     <input type="radio" name="budget" id="budget5">
-                    <label for="budget5">$500k +</label>
+                    <label for="budget5"><span></span>$500k +</label>
                 </div>
+
             </fieldset>
 
-            <input type="submit" value="Submit">
+            <footer>
+                <input type="submit" value="Submit">
+            </footer>
+
         </form>
     </div>
 

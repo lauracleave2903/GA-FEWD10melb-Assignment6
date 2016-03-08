@@ -121,9 +121,9 @@ body {
 }
 
 #container {
-    max-width: 600px;
+    max-width: 640px;
     margin: 0 auto;
-    padding-top: 20px;
+    padding: 20px 20px 50px 20px;
 }
 
 
@@ -163,6 +163,10 @@ fieldset > label {
     width: 100%;
 }
 
+label {
+    vertical-align: middle;
+}
+
 input[type="text"],
 input[type="email"],
 textarea {
@@ -176,6 +180,7 @@ input[type="email"] {
     border-bottom: 1px solid #000000;
     padding: 10px 0 10px 0;
     margin-bottom: 20px;
+    outline: none;
 }
 
 input[placeholder] {
@@ -184,16 +189,69 @@ input[placeholder] {
     font-size: 1.25rem;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
-    display: inline-block;
-    margin: 12px 5px 12px 0;
-}
-
 .radio > label,
 .checkbox > label {
     font-family: 'Source-Serif-Pro', serif;
     font-weight: 400;
+    display: block;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="radio"] + label span {
+    display: inline-block;
+    margin: 10px 10px 10px 0;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border: 1px solid #d0d0d0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + label span:before {
+    content: "\2022";
+    color: #000000;
+    text-align: center;
+    line-height: 18px;
+    padding-left: 4px;
+    font-size: 30px;
+}
+
+input[type="checkbox"] + label span {
+    display: inline-block;
+    margin: 5px 10px 5px 0;
+    vertical-align: middle;
+    line-height: 1;
+    width: 25px;
+    height: 25px;
+    background: #f2f2f2;
+    border: 2px solid #9ba4ab;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label span:before {
+    content: "\2022";
+    color: #9ba4ab;
+    text-align: center;
+    line-height: 20px;
+    padding-left: 5px;
+    font-size: 30px;
+}
+
+label[for="discuss"],
+label[for="offerings"] {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.problem {
+    margin-top: 25px;
 }
 
 
@@ -213,12 +271,31 @@ textarea {
     min-height: 100px;
     padding: 10px;
     margin: 10px 0 20px 0;
+    outline: none;
 }
 
 
 /*
  * SUBMIT
  */
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+input[type="submit"] {
+    font-family: 'Source-Sans-Pro', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding: 15px 40px 15px 40px;
+    background: #f2f2f2;
+    cursor: pointer;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    outline: none;
+}
 
 
 /* ==========================================================================
@@ -401,5 +478,64 @@ html {
     h2,
     h3 {
         page-break-after: avoid;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    body {
+        font-size: 1.5rem;
+    }
+    #container {
+        max-width: 1400px;
+        padding: 50px 185px 80px 185px;
+    }
+    h2 {
+        font-size: 2.375rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+    fieldset {
+        margin-top: 60px;
+    }
+    .subHead {
+        font-size: 2.188rem;
+    }
+    fieldset > label {
+        width: auto;
+    }
+    input[type="text"],
+    input[type="email"] {
+        padding: 20px 0 15px 0;
+        margin-bottom: 40px;
+    }
+    input[placeholder] {
+        font-size: 2.188rem;
+    }
+    .radio > label,
+    .checkbox > label {
+        display: inline;
+        margin-right: 40px;
+        font-size: 1.375rem;
+    }
+    .radio,
+    .checkbox {
+        margin: 20px 0 60px 0;
+    }
+    .fieldset2 {
+        margin-top: 20px;
+    }
+    input[type="radio"]:checked + label span {
+        line-height: 0;
+    }
+    input[type="radio"]:checked + label span:before {
+        line-height: 18px;
+    }
+    textarea {
+        min-height: 190px;
+        margin: 20px 0 40px 0;
+    }
+    input[type="submit"] {
+        font-size: 1.875rem;
     }
 }
